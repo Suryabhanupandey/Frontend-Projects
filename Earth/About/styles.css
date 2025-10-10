@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.first-section {
+    background: url("./assets/About-banner.png") no-repeat center center/cover;
+
+    height: 80vh;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+
+.first-h1 {
+    font-size: 80px;
+    color: green;
+
+}
+
+
+.four-section {
+    background: url("./assets/Call-to-action\ \(1\).png") no-repeat center center/cover;
+    height: 60vh;
+    width: 100%;
+    padding: 40px;
+}
+
+.h1-call {
+    color: #78A87A;
+}
+
+.btn {
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #78A87A;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #00b4d8;
+    color: black;
+}
+
+/* Footer */
+.footer-section {
+    background: #f8f9fa;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #78A87A;
+}

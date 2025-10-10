@@ -1,0 +1,109 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Arial, sans-serif;
+ }
+.padding-inline {
+  padding-inline: 10rem !important;
+}
+
+/* For small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .padding-inline {
+    padding-inline: 1.5rem !important;
+  }
+}
+ /* Navbar */
+ .navbar-nav .nav-link {
+   font-weight: 500;
+   margin-left: 15px;
+ }
+
+ .navbar-nav .nav-link:hover,
+ .navbar-nav .nav-link.active {
+   color: #78A87A !important;
+ }
+
+ /* Hero Section */
+ .first-section {
+   background: url("./assets/bootstrap/Banner.png") no-repeat center center/cover;
+   height: 80vh;
+   width: 100%;
+   position: relative;
+ }
+
+ .first-h1 {
+   font-size: 80px;
+   font-weight: 900;
+   color: green;
+ }
+
+ .f3 {
+   font-size: 50px;
+   font-weight: 600;
+   color: green;
+ }
+
+ /* Mission Section */
+ .third-section h3 {
+   color: #333;
+ }
+
+ .third-section p {
+   color: #555;
+   line-height: 1.7;
+ }
+
+ /* Call To Action */
+ .four-section {
+   background: url("./assets/bootstrap/Call-to-action.png") no-repeat center center/cover;
+   height: 60vh;
+   width: 100%;
+   padding: 40px;
+ }
+
+ .h1-call {
+   color: #78A87A;
+ }
+
+ .btn {
+   font-size: 20px;
+   border-radius: 8px;
+   padding: 10px 25px;
+   color: white;
+   background-color: #78A87A;
+   transition: 0.3s ease;
+ }
+
+ .btn:hover {
+   background: #00b4d8;
+   color: black;
+ }
+
+ /* Footer */
+ .footer-section {
+   background: #f8f9fa;
+ }
+
+ .footer-links {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 0;
+   margin: 0;
+ }
+
+ .footer-links li a {
+   text-decoration: none;
+   color: black;
+   transition: 0.3s;
+ }
+
+ .footer-links li a:hover {
+   color: #78A87A;
+ }

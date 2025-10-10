@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.first-section {
+  background: url("./assets/Contact-Banner.png") no-repeat center center/cover;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.first-h1 {
+  font-size: 3rem;
+  /* responsive base size */
+  color: green;
+}
+
+@media (min-width: 768px) {
+  .first-h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .first-h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Form */
+.Form-content {
+  border-radius: 8px;
+  /* box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); */
+  padding: 1.8rem;
+  background: #fff;
+}
+
+.input-form {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-btn {
+  background-color: #74A84A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Icons */
+.icon,
+.icon-2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #74A84A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  background-color: #74A84A;
+  color: #fff;
+}
+
+.icon-2 {
+  background-color: #74A84A;
+  color: #fff;
+}
+
+.icon-2:hover {
+  background-color: #02870b;
+  color: #fff;
+}
