@@ -11,7 +11,7 @@
 /* For small screens (max-width: 768px) */
 @media (max-width: 768px) {
   .padding-inline {
-    padding-inline: 2 !important;
+    padding-inline: 0 !important;
   }
   .svg-img{
     height: 8vh;
