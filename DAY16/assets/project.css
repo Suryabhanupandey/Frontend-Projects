@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+       font-family: "Work Sans", sans-serif;
+
+}
+ 
+.padding-inline {
+  padding-inline: 6rem !important;
+}
+
+/* For small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .padding-inline {
+    padding-inline: 0 !important;
+  }
+  .svg-img{
+    height: 8vh;
+    width: 4vw;
+    padding: 0.5rem;
+  }
+}
+
+ /* Navbar */
+ .navbar {
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ .navbar-brand {
+   font-weight: bold;
+   font-size: 1.3rem;
+   color: white !important;
+ }
+
+ .nav-link {
+   color: white !important;
+   margin: 0 10px;
+ }
+
+ /* Hero Section */
+ .header-section {
+   position: relative;
+   height: 70vh;
+   width: 100%;
+   background: url("./bootstrap/Image/projects-hero-bg.png") no-repeat center center/cover;
+ }
+  .header-section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ .btn-btn1 {
+   background-color: #ebd35b;
+   color: #183030;
+   padding: 0.9rem 1.9rem;
+   border: none;
+   border-radius: 1.5rem;
+   font-size: 1rem;
+   font-weight: 500;
+
+ }
+ .btn-btn1:hover{
+  background-color: #d4b61c;
+  color: #fff;
+
+ }
+
+ /* Second section */
+  
+  
+/* third section */
+ .third-section {
+   position: relative;
+   color: #fff;
+   min-height: 60vh;
+   width: 100%;
+   background: url("./bootstrap/Image/footer-bg.png") no-repeat center center/cover;
+ }
+ .third-section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+ .col-text{
+  position: relative;
+  z-index: 2;
+ }
+  .btn-btn1 {
+   background-color: #ebd35b;
+   color: #183030;
+   padding: 0.9rem 1.9rem;
+   border: none;
+   border-radius: 1.5rem;
+   font-size: 1rem;
+   font-weight: 500;
+
+ }
+ .btn-btn1:hover{
+  background-color: #d4b61c;
+  color: #fff;
+
+ }
+ /* Footer Section */
+.footer-section {
+  background-color: #f3faf6;
+}
+ 
+  .items-link {
+     color: #526354;
+  
+  }
+  
+.item-list {
+  padding: 0.3rem;
+}
+
+ .image-footer{
+  color: black;
+  fill:black ;
+ }
+
+.footer-row{
+  border-bottom: 2px solid red;
+  padding: 5rem 9rem 2rem 9rem;
+  
+}
+@media (max-width: 768px) {
+  .footer-row { padding: 3rem 2rem 2rem 2rem; }
+}
+
+/* End footer */
