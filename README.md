@@ -1,4 +1,4 @@
-# Earth Endless Potential
+# Projects
 
 ##### Technologies used 
 
