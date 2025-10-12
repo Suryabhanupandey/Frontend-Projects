@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+ 
+ 
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+.btn{
+  background-color: #001319;
+  color: #fff;
+}
+.btn:hover{
+  background-color: #de463b;
+  color: #fff;
+   border-radius: 10px;
+
+}
+
+
+
+
+/* Hero Section */
+.cst-padding {
+    padding: 10rem;
+}
+
+.header-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("./bootstrap/Image/toasting-glasses.png") no-repeat center center/cover;
+}
+
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(47, 45, 45, 0.60);
+}
+
+.col-text {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-div {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-h5 {
+    border-radius: 20px;
+    background-color: rgba(209, 209, 209, 0.3);
+    padding: 10px 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+
+/*First Section CSS End Here*/
+
+
+/* Second Section Strat */
+.count {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1a1a1a14;
+    /* margin-right: 9rem; */
+
+}
+.text-col{
+    padding: 0px 200px 0px 0px;
+}
+
+.div1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Second Section End */
+/* third Section starts */
+ 
+    .logo {
+         display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding: 20px; */
+      /* max-width: 150px;   */
+       filter: grayscale(100%); 
+      transition: 0.3s;
+      padding: 36px;
+      border: 1px solid slategrey;
+      
+    }
+    .logo:hover {
+        
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+/* third Section End */
+
+/* fouth Section Starts */
+ .heading-4{
+    margin-top: 1.5rem; 
+    margin-bottom: 1rem;
+    padding-left: .5rem ;
+    border-left: 1px solid red;
+     
+ }
+/* fourth Section End */
+ /* Fifth Section */
+ .icon{
+    font-size: 1.5rem;
+    color: red;
+ }
+  .text-div{
+    transition: all 0.3s ease-in-out;
+  }
+  .text-div:hover{
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+ /* end Fifth Section */
+
+ /* start Six Section */
+ 
+
+
+ /* End Six Section */
+
+
+   /* Start seven Section    */
+
+   .seven-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        position: relative;
+    min-height: 60vh;
+    width: 100%;
+    background: url("./bootstrap/Image/selective-focus-multi-color-confetti.png") no-repeat center center/cover;
+
+   }
+
+   .butt{
+    border-radius: 10px;
+    color: #183030;
+    padding: 12px 24px;
+    background-color: #fff;
+    border: none;
+    transition:all  1s ease-in-out;
+   }
+   .butt:hover{
+    background-color: #de463b;
+    color: #fff;
+    border: 2px solid #fff;
+   }
+   .butt-1{
+    border-radius: 10px;
+    color: #183030;
+    padding: 12px 24px;
+    background-color: #fff;
+    
+    transition:all  1s ease-in-out;
+   }
+   .butt-1:hover{
+    background-color: #de463b;
+    color: #fff;
+    border: 2px solid #fff;
+   }/* Footer Section */
+.footer-section {
+
+  background-color: #001319;
+}
+
+.unader-list {
+  list-style-type: none;
+
+  .items-link {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5rem;
+  }
+}
+
+.items-link:hover{
+  color: #de463b;
+}
+
+ 
+
+#icon {
+  width: 2rem;
+  color: red;
+}
+
+.footer-row {
+  border-bottom: 1px solid red;
+}
+
+.icon-foot{
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #5f6563;
+  margin: 0px 7.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 7px;
+   
+}
+.icon-foot:hover{
+background-color: #de463b;
+}
+
+/* End footer */
