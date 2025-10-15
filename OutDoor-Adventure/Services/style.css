@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+/* Navbar */
+
+
+.navbar .nav-link {
+    color: #fff !important;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #00b4d8 !important;
+    border-bottom: 2px solid #00b4d8;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #fb2056;
+}
+
+.nav-btn:hover {
+    background: #00b4d8;
+    color: black;
+
+}
+
+/* section */
+.first-section {
+    background: url("../assets/services-bg.png") no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.first-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.h1-first {
+    position: relative;
+    z-index: 2;
+    font-size: 5rem;
+    font-weight: 700;
+
+}
+
+
+/* Large screens (desktops >1200px) */
+@media (min-width: 1200px) {
+    .h1-first {
+        font-size: 5rem;
+    }
+}
+
+/* Medium screens (tablets: 768px–1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .h1-first {
+        font-size: 3.5rem;
+    }
+}
+
+/* Small screens (phones <768px) */
+@media (max-width: 767px) {
+    .h1-first {
+        font-size: 2.5rem;
+        text-align: center; /* optional, improves mobile layout */
+    }
+}
+
+/* Extra small screens (very small phones <480px) */
+@media (max-width: 480px) {
+    .h1-first {
+        font-size: 2rem;
+    }
+}
+.image-third {
+    box-shadow: 5px 5px 5px 5px rgba(48, 48, 48, 0.4);
+
+}
+
+.footer {
+    background-color: #191919;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+
+}
