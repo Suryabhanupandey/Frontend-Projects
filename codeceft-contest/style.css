@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0d0d2b, #1a1a1a);
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* BACKGROUND OVERLAY */
+.web-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url('./images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1; 
+  z-index: 0;
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #ff1e1e;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* ====== Transform the hamburger to X when active ====== */
+.hamburger.active .bar-top{
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar-middle{
+  opacity: 0;
+}
+.hamburger.active .bar-bottom{
+  transform: translateY(-9px) rotate(-45deg);
+
+}
+
+/* SIDE MENU */
+.menu {
+  position: fixed;
+  top: 0;
+
+  /* Menu hidden by default */
+  left: -250px;
+
+  width: 250px;
+  height: 100%;
+  background: rgba(15, 15, 30, 0.97);
+  backdrop-filter: blur(10px);
+  padding: 80px 25px;
+  transition: left 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+/* ====== Write code to make menu visible when active ======  */
+.menu.active{
+  left: 0;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 25px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ff1e1e;
+}
+
+/* HERO WRAPPER */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 1;
+  gap: 48px;
+}
+
+.hero-text {
+  flex: 1 1 480px;  
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start; 
+  text-align: left;
+  gap: 16px;
+  z-index: 2;
+  padding: 8px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ff1e1e;
+  margin-bottom: 6px;
+  line-height: 1.05;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  color: #1e90ff;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 640px;
+  margin-top: 6px;
+}
+
+/* HERO IMAGE SLOT */
+.hero-img {
+  flex: 1 1 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 8px;
+}
+
+/* Spiderman image */
+.spiderman-logo {
+  width: 480px;
+  max-width: 100%;
+  display: block;
+  animation: floatUpDown 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.spiderman-logo {
+  filter: drop-shadow(0 18px 30px rgba(0,0,0,0.6));
+  border-radius: 12px;
+}
+
+/* CONTENT AND FOOTER */
+.content {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  color: #ff1e1e;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.content p {
+  color: #ccc;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: rgba(15, 15, 30, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* ANIMATIONS */
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE RULES */
+@media (min-width: 1400px) {
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero h1 { font-size: 3.4rem; }
+  .spiderman-logo { width: 560px; }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 40px;
+    gap: 36px;
+  }
+
+  .hero-text {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 520px;
+  }
+
+  .spiderman-logo {
+    width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; 
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 24px 40px; 
+    gap: 22px;
+    min-height: auto;
+  }
+
+  .hero-text {
+    order: 2;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    padding: 6px 8px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+  }
+
+  .spiderman-logo {
+    width: 320px;
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 28px;
+    gap: 14px;
+  }
+  .spiderman-logo { width: 240px; }
+  .hero h1 { font-size: 1.6rem; }
+  .tagline { font-size: 1rem; }
+  .hero p { font-size: 0.95rem; max-width: 95%; }
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+
