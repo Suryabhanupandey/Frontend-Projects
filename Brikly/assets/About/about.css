@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* REMOVE HORIZONTAL SCROLL FULLY */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*************** Buttons ***************/
+.btn-nav {
+    padding: 10px 30px;
+    border: none;
+    background-color: #cbff54;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #063231;
+    margin-left: 2rem;
+    transition: background 0.3s ease;
+}
+
+.btn-nav:hover {
+    background: #91ca0c;
+}
+
+.btn1 {
+    border: none;
+    font-size: 14px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+   background-color: transparent;
+    padding: 8px 30px;
+}
+
+/*************** Header Section ***************/
+.main-section {
+    background-image: url('../image/hero-back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius: 20%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;   
+    position: relative;
+}
+
+.main-section::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius: 20%;
+    background-color: rgba(6, 50, 49, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.nav-main {
+    position: relative;
+    z-index: 2;
+}
+
+.inline-padding {
+    padding-top: 10rem;
+}
+
+.center-abs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 90%; 
+    text-align: center;
+}
+
+/*************** Navbar ***************/
+.navbar .nav-link {
+    position: relative;
+    color: #ffffff;
+    padding-bottom: 5px;
+    transition: color .3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #f5b544;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #cbff54;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-link.active {
+    color: #91ca0c;
+}
+
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+.sec-h1 {
+    color: #063231;
+}
+
+/*************** Sections ***************/
+.third-secBox {
+    background-color: #063231;
+    color: #fff;
+}
+
+ 
+
+
+
+.num {
+    font-size: 2.7rem;
+    color: #cbff54;
+}
+
+.third-secBox1 {
+    background-color: #cbff54;
+}
+
+.div-svg {
+    height: 50px;
+    width: 50px;
+    background-color: #063231;
+    border-radius: 50%;
+    padding: 12px;
+    fill: #cbff54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fifth-Section {
+    background-color: #F6F7F7;
+}
+
+.box1 {
+    border-radius: 10%;
+}
+
+.ull {
+    list-style: none;
+}
+
+.correct {
+    height: 30px;
+    margin-bottom: 5px;
+    fill: #063231;
+}
+
+.li-text {
+    margin-bottom: 10px;
+}
+
+.six-div {
+    padding-top: 9rem;
+}
+
+@media (max-width:768px){
+    .six-div{
+        padding-top: 2rem;
+    }
+}
+.Deives-img{
+    border-radius: 30px;
+    
+}
+
+/*************** Seventh Section ***************/
+.seven-row {
+    background-color: #cbff54;
+    border-radius: 20px;
+}
+
+.Seventh-section {
+    background-color: #063231;
+}
+
+.btn7 {
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #063231;
+    color: #cbff54;
+}
+
+/* Footer */
+.ul7 {
+    list-style: none;
+}
+
+.svg7 {
+    height: 30px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #cbff54;
+}
+
+.ul8 {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ul8 > li {
+    padding-left: 10px;
+}
+
+.inner8 {
+    border-top: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.li-seven {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.li-seven:hover {
+    color: #cbff54;
+}
+
+.right8 {
+    display: flex;
+    gap: 20px;
+}
+
+.right8 ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
